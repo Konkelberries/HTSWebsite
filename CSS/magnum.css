@@ -31,33 +31,34 @@ body{
 	}
 
 /* Spotlight */	
-#logo-right, #logo-left {
+#banner-right, #banner-left {
 	background-color: #003399;
 }	
 
 /***************************************
- *Logor i topen av sidan.
+ *Banner i topen av sidan.
  **************************************/
  
-#logo-right, #logo-center, #logo-left, #top{
+#banner-right, #banner-center, #banner-left, #top{
 	height:140px;
 	float: left;
 }
 
-#logo-right{
+#banner-right{
 	width: 250px;
 }
 
-#logo-center{
+#banner-center{
 	width: 495px;
 }
 
-#logo-left{
+#banner-left{
 	width: 250px;
 }
 
 /***************************************
- * För layoten som är samma i alla dokument
+ * För layot som skapar strukturen och kolumnerna
+ * på en sida.
  * Bra att komma ihåg: top, right, bottom, left
  **************************************/
  
@@ -68,8 +69,8 @@ body{
 
 #content{
 	width: 995px;
-	height: 2000px;
-	margin: 0;
+	height: 1750px;
+	margin: 50px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -106,7 +107,7 @@ body{
 
 #center-right{
 	width: 714px;
-	height:1800px;
+	height:1600px;
 	float: left;
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -130,6 +131,59 @@ body{
 	padding: 0;
 }
 
+/***************************************
+ * För menyer
+ **************************************/
+.meny {
+    padding: 0;
+    margin: 0;
+    float: left;
+ }
+ 
+.meny .horizontal {
+}
+
+.meny ul{
+   margin: 0; 
+   padding: 0; 
+   float: left; 
+   width: 100%; 
+   background: #99CC99; 
+   font: 70% Verdana, Helvetica, sans-serif;
+}
+
+.meny li{
+   display: inline;
+}
+
+.meny ul a{
+    float: left;
+    text-decoration: none;
+    padding: 0.3em 2em;
+    border: 1px solid #99CC99;
+}
+    
+.meny a:link{
+    color: #000000;
+}
+
+.meny a:visited{
+    color: #000000;
+}
+
+.meny a:hover{
+    border: 1px solid #000000;
+}
+
+.meny a#current{
+    background: #D6EBD6;
+    color: #000000;
+}
+ 
+.meny .vertical {
+ 
+}
+ 
 /***************************************
  * För nyhetslistan på första sidan
  **************************************/
