@@ -1,0 +1,4 @@
+<form metod= "POST" action= "input.php">
+<input type= "text"/>
+<input type= "submit"/>
+</form>
