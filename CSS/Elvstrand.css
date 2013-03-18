@@ -4,6 +4,7 @@
 body{
 	font-family: "Tahoma", "DejaVu Sans","Sans-Serif";
 	font-size: 10pt;
+	color: red;
 }
 
 h1 {
@@ -17,12 +18,12 @@ h1 {
 
 /* background */
 body{
-	background-color: #000000;
+	background-image: url('http://127.0.0.1/HTS/Websidan/BlueMatrix.jpg');
 }
 
 /* column */
 #content, #left, #right, #frame, #footer {
-	background: #66CCFF;
+	background-image: url('http://127.0.0.1/HTS/Websidan/bg4.jpg');
 	}
 	
 /* Front */
@@ -31,9 +32,12 @@ body{
 	}
 
 /* Spotlight */	
-#banner-right, #banner-left {
-	background-color: #003399;
+#banner-left {
+	background-image: url('http://127.0.0.1/HTS/Websidan/global_banner.jpg');
 }	
+#banner-right {
+	background-image: url('http://127.0.0.1/HTS/Websidan/Purple-Colored-MacBook-Keyboard.jpg');
+}
 
 /***************************************
  *Banner i topen av sidan.
