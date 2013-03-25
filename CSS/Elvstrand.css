@@ -22,8 +22,14 @@ body{
 }
 
 /* column */
-#content, #left, #right, #frame, #footer {
-	background-image: url('http://127.0.0.1/HTS/Websidan/bg4.jpg');
+#left {
+	background-image: url('http://127.0.0.1/HTS/Websidan/MenuBackgroundLeft.png');
+	height: 1600px;
+	}
+
+#right {
+	background-image: url('http://127.0.0.1/HTS/Websidan/MenuBackgroundRight.png');
+	height: 1600px;
 	}
 	
 /* Front */
@@ -38,6 +44,12 @@ body{
 #banner-right {
 	background-image: url('http://127.0.0.1/HTS/Websidan/Purple-Colored-MacBook-Keyboard.jpg');
 }
+
+#banner-center {
+	background-image: url('http://127.0.0.1/HTS/Websidan/bg4.jpg');
+}
+
+
 
 /***************************************
  *Banner i topen av sidan.
