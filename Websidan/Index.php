@@ -27,15 +27,37 @@ include '../Websidan/connect.php';
 				<h1 class="dokument-item-header"> LeagueProfile</h1>
 				<p class="info"></p>
 				
-								<b>
-
-<form action="login.php" method="post">
+								<b><form action="login.php" method="post">
 Användarnamn: <input type="text" name="myUser"> <br />
-Lösenord: <input type="password" name="myPassword"> <br />
-<input type="submit" Name = "Submit1" VALUE = "Logga in"/>
+Lösenord: <input type="text" name="myPassword"> <br />
+<input type="submit">
 </b>
-</form>
 
+<?php
+ echo "hej";
+         $query = "SELECT * FROM user";
+         echo "hej";
+		 
+         $result = mysql_query($query);
+         if ($result === false)
+		 {
+		 echo 'hej2';
+	         echo '<strong> Error when you asked a question to your databas.2 </strong>';
+			 echo "hej2";
+        }
+         $num=mysql_numrows($result);
+         if($num==0) {
+             echo '<strong>Your question is empty</strong>';
+         }
+         else {
+             echo "<ul>";
+             for ($i=0;$i<$num;$i++) {
+                 $temp = mysql_fetch_array($result);
+	             echo "<li>" . $temp["namn"] . "</li>";
+             }
+             echo "</ul>";
+        }
+?>
 <?php
    mysql_close($con);
 ?>

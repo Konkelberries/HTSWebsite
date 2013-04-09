@@ -1,6 +1,8 @@
+
 <?php
-include '../Websidan/connect.php';
+include '../Websidan/LoggedOnOrNot.php';
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
@@ -27,14 +29,6 @@ include '../Websidan/connect.php';
 				<h1 class="dokument-item-header"> LeagueProfile</h1>
 				<p class="info"></p>
 				
-								<b>
-
-<form action="login.php" method="post">
-Användarnamn: <input type="text" name="myUser"> <br />
-Lösenord: <input type="password" name="myPassword"> <br />
-<input type="submit" Name = "Submit1" VALUE = "Logga in"/>
-</b>
-</form>
 
 <?php
    mysql_close($con);
@@ -54,5 +48,3 @@ Lösenord: <input type="password" name="myPassword"> <br />
         </div>
     </body>
 </html>
-
-

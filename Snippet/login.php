@@ -1,6 +1,6 @@
 ﻿<!-- Kom ihåg att logga in till databasen först! -->
 <?php
-		include '../Demo/connect.php';
+		include '../Websidan/connect.php';
          $query = "SELECT name FROM user WHERE name='$_POST[myUser]' AND password='$_POST[myPassword]'";
          //echo '<em> ' . $query . ' </em>';
          $result = mysql_query($query);

@@ -1,29 +1,17 @@
 ﻿<!-- Kom ihåg att logga in till databasen först! -->
 <?php
-<<<<<<< HEAD
-         $query = "SELECT name FROM user WHERE name='$_POST[myUser]' AND password='$_POST[myPassword]'";
-         //echo '<em> ' . $query . ' </em>';
+        include '../Websidan/connect.php';
+		session_start();
+         $query = "SELECT * FROM `user` WHERE `name`=\"$_POST[myUser]\" and `password`=\"$_POST[myPassword]\"";;
          $result = mysql_query($query);
-         if (mysql_numrows($result) == 1) {
-		      session_start();
+		 $num_rows =  mysql_num_rows($result);
+		 if ($num_rows == 1) {
 		      $_SESSION['session_user']=$_POST[myUser];
-			  header('Location: index.php');
-=======
-        include '../Demo/connect.php';
-		
-         $query = "SELECT name FROM user WHERE name='$_POST[myUser]' AND password='$_POST[myPassword]'";
-         echo '<em> ' . $query . ' </em>';
-         $result = mysql_query($query);
-		 session_start();
-		 session_unset();
-         
-		 if (mysql_numrows($result) == 1) {
-		      $_SESSION['session_user']=$_POST[myUser];
-			  header('Location: index.html');
->>>>>>> hts-upstream/master
+			  //header('Location: Inloggad.php');
 		 }
 		 else {
-			  header('Location: login.html');
+		       echo "hej";
+			  //header('Location: index.html');
 		 }
 		
 ?>
