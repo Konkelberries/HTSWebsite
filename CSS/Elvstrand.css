@@ -34,7 +34,7 @@ body{
 	
 /* Front */
 #center, #center-right {
-	background: #FFF;
+	background: #000000;
 	}
 
 /* Spotlight */	
@@ -137,7 +137,7 @@ body{
 	clear: both;
 	border: black solid;
 	border-width: 2px 0px 0px 0px;
-	background: #f0f0f0;
+	background: #000000;
 	margin: 0;
 	padding: 0;
 }

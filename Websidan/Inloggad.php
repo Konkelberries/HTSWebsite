@@ -28,11 +28,12 @@ include '../Websidan/LoggedOnOrNot.php';
                 <div id="info">
 				<h1 class="dokument-item-header"> LeagueProfile</h1>
 				<p class="info"></p>
-				
 
-<?php
-   mysql_close($con);
-?>
+<a href="dohna.com"	 > <img src='http://127.0.0.1/HTS/Websidan/Timothysprofil.png'></a>
+				
+<form action="loggaut.php" method="post">
+<input type="submit" Name = "Submit1" VALUE = "Logga ut">
+</form>
 
 </form>
 </div>
