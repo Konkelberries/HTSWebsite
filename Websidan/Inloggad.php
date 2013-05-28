@@ -1,4 +1,3 @@
-
 <?php
 include '../Websidan/LoggedOnOrNot.php';
 ?>
@@ -29,7 +28,7 @@ include '../Websidan/LoggedOnOrNot.php';
 				<h1 class="dokument-item-header"> LeagueProfile</h1>
 				<p class="info"></p>
 
-<a href="dohna.com"	 > <img src='http://127.0.0.1/HTS/Websidan/Timothysprofil.png'></a>
+<a href="http://www.lolking.net/search?name=timoothy"> <img src='http://127.0.0.1/HTS/Websidan/Timothysprofil.png'></a>
 				
 <form action="loggaut.php" method="post">
 <input type="submit" Name = "Submit1" VALUE = "Logga ut">
@@ -39,7 +38,11 @@ include '../Websidan/LoggedOnOrNot.php';
 </div>
 </div>
             <div id="right">
-					
+			<b>Här kan du söka efter användare på sidan genom användarnamn eller förnamn:<b/>
+	<form action="search.php" method="POST">
+    <input type="text" name="query" />
+    <input type="submit" value="Search" />
+</form>
             </div>
 
 			<div id="footer">

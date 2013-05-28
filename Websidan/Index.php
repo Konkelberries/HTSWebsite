@@ -103,6 +103,12 @@ Lösenord: <input type="password" name="myPassword"> <br />
 </div>
 </div>
             <div id="right">
+			<br />
+			<b>Här kan du söka efter användare på sidan genom användarnamn eller förnamn:<b/>
+			<form action="search.php" method="POST">
+    <input type="text" name="query" />
+    <input type="submit" value="Search" />
+</form>
 					
             </div>
 

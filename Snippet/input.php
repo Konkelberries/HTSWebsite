@@ -1,6 +1,6 @@
 <?php
 		if(isset($_POST[myText]) and $_POST[myNumber]){
-             $query = "INSERT INTO TestTable (Text, Number) VALUES ('$_POST[myText]', '$_POST[myNumber]')";
+				$query = "INSERT INTO TestTable (Text, Number) VALUES ('$_POST[myText]', '$_POST[myNumber]')";
              //echo '<em> ' . $query . ' </em>';
              $result = mysql_query($query);
              if ($result === false) {
