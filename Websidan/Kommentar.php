@@ -1,8 +1,9 @@
 <?php
-include '../Websidan/connection.php';
+include '../Websidan/connect.php';
 
-echo "mes";
-$password = ($_POST['fjant']);
-echo $password;
+$comment = mysql_real_escape_string($_POST['comment']);
+$query = mysql_real_escape_string($_GET['query']);
+mysql_query("INSERT INTO member(comments) VALUES('$comment') where username($query)");
+
 
 ?>
