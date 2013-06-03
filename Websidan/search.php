@@ -62,9 +62,11 @@ include '../Websidan/connect.php';
         echo "Minimum length is ".$min_length;
     }
 
-echo "<form action='Kommentar.php?query=".$query."' method='GET'>";
 ?>
+	<form action='Kommentar.php' method='POST'>
     <input type="text" name="comment">
+	<input type="hidden" name="query" value="<?php
+	echo $query ?>"	>	
     <input type="submit" value="Skriv kommentar!"/>
 </form>
 								<b>
